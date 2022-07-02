@@ -1,0 +1,4 @@
+gen code api.ts
+b1: chay lenh "lb export-api-def -o codegen/def.yaml"
+b2: chay lenh "java -jar swagger-codegen-cli-2.2.3.jar generate -i def.yaml -l typescript-fetch -o api/fetch"
+b3: gen code angular chay lenh "./node_modules/.bin/lb-sdk server/server.js codegen/api/angular"

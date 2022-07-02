@@ -1,0 +1,29 @@
+{
+  "name": "FlowOut",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true
+    }
+  },
+  "properties": {
+    "flowOut": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tank": {
+      "type": "belongsTo",
+      "model": "Tank",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

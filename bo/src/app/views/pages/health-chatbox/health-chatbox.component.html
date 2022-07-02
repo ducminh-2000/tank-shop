@@ -1,0 +1,157 @@
+<div class="title-page">
+    <span>
+        {{ "Quản lý hóa đơn xuất xăng" | translate }}
+    </span>
+</div>
+<div class="kt-portlet kt-portlet--mobile">
+    <div class="kt-portlet__head kt-portlet__head--lg">
+        <div class="kt-portlet__head-label">
+            <span class="kt-portlet__head-icon">
+                <i class="fa fa-user"></i>
+            </span>
+            <span>Số lượng: {{ totalItems }}</span>
+        </div>
+        <div class="kt-portlet__head-toolbar">
+            <app-page-actions (addEmitter)="showAddItemModal()" (deleteEmitter)="deleteMultipleItems()"
+                [isAddVisible]="isRoleAdmin || isRoleSuperAdmin" [isDeleteVisible]="isRoleSuperAdmin"
+                >
+            </app-page-actions>
+        </div>
+    </div>
+    <div class="kt-portlet__body" *ngIf="isRoleSuperAdmin">
+        <div class="kt-form kt-form--label-right kt-margin-t-20 kt-margin-b-10">
+            <div class="row align-items-center">
+                <div class="col-xl-12 order-2 order-xl-1">
+                    <div class="row align-items-md-start">
+                        <mat-form-field class="col-3" (click)="overlayZindex()" appearance="fill">
+                            <mat-label>Chọn bình xăng</mat-label>
+                
+                            <mat-select ngDefaultControl [formControl]="tankForm" placeholder="tank" #multiSelect name="tank"
+                              [(ngModel)]="filterTank">
+                              <mat-option>
+                                <ngx-mat-select-search [formControl]="tankFormFilterCtrl" ngDefaultControl name="search" placeholderLabel="Tên bình xăng..." 
+                                noEntriesFoundLabel="'Không có bình xăng thỏa mãn yêu cầu'">
+                                </ngx-mat-select-search>
+                              </mat-option>
+                              <mat-option *ngFor="let tank of filteredTankForm | async" [value]="tank">
+                                {{ tank.name }}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        <!-- <div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+                            <label for="filterName">Flow out</label>
+                            <input [(ngModel)]="filterName" class="form-control" id="filterName" name="filterName"
+                                type="number" />
+                        </div> -->
+                        <!-- <div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+                            <mat-form-field style="width:100%" (click)="overlayZindex()" appearance="fill">
+                                <mat-label>Đã huấn luyện</mat-label>
+                                <mat-select [formControl]="trainForm" name="train" [(ngModel)]="filterTrain">
+                                    <mat-option [value]="true">
+                                        {{ "Đã huấn luyện" }}
+                                    </mat-option>
+                                    <mat-option [value]="false">
+                                        {{ "Chưa huấn luyện" }}
+                                    </mat-option>
+                                    <mat-option default name="all" [value]="undefined">
+                                        {{ "Tất cả" }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+                            <mat-form-field style="width:100%" (click)="overlayZindex()" appearance="fill">
+                                <mat-label>Kết quả</mat-label>
+                                <mat-select [formControl]="checkForm" name="check" [(ngModel)]="filterCheck">
+                                    <mat-option name="true" [value]="true">
+                                        {{ "Đúng" }}
+                                    </mat-option>
+                                    <mat-option name="false" [value]="false">
+                                        {{ "Sai" }}
+                                    </mat-option>
+                                    <mat-option name="all" default [value]="undefined">
+                                        {{ "Tất cả" }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div> -->
+
+
+                        <div class="col-md-2 kt-margin-b-20-tablet-and-mobile text-center">
+                            <label for="searchButton"> </label>
+                            <button id="searchButton" type="button" class="
+      btn-custom-normal btn btn-brand btn-success
+      d-flex
+      form-control
+      " (click)="getData()">
+                                <i class="fa fa-search"></i>Tìm kiếm
+                            </button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kt-portlet__body kt-portlet__body--fit">
+        <!--begin: Datatable -->
+        <div class="table-responsive" id="scrolling_vertical">
+            <table class="table" style="font-size: 13px">
+                <thead>
+                    <tr>
+                        <th style="width: 2.5%">
+                            <label class="kt-checkbox" style="margin-left: 5px">
+                                <input type="checkbox" #checkboxAll
+                                    (click)="toggleCheckAll(listData, checkboxAll.checked)" id="checkAll"
+                                    [checked]="checkAll" /><span></span>
+                            </label>
+                        </th>
+                        <th style="width: 2.5%">ID</th>
+                        <th style="width: 15%">{{ "general.table.action" | translate }}</th>
+                       
+                        <th style="width: 15%">Flow Out</th>
+                        <th style="width: 15%">Tank name</th>
+                        <th style="width: 15%">Created At</th>
+                        <th style="width: 15%">Updated At</th>
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of listData; let i = index">
+                        <td>
+                            <label class="kt-checkbox kt-checkbox--single">
+                                <input type="checkbox" #checkbox (click)="toggleCheckItems(data, checkbox.checked)"
+                                    id="{{data.id }}" [checked]="isCheckbox" /><span></span>
+                            </label>
+                        </td>
+                        <td>{{ i + 1 }}</td>
+                        <td>
+                            <div class="btn-group btn-space">
+                                <button type="button" class="btn btn-outline-success" (click)="deleteItem(data)"
+                                    *ngIf="isRoleSuperAdmin">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-success" (click)="showCRUDItemModal(data,1)">
+                                    <i class="fa fa-pen"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>{{data?.flowOut }}</td>
+                        <td>{{data?.tank?.name}}</td>
+                        <td>{{data?.createdAt | date: "dd/MM/yyyy HH:MM:SS" }}</td>
+                        <td>{{data?.updatedAt | date: "dd/MM/yyyy HH:MM:SS"}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="text-align: center">
+        <ngb-pagination [collectionSize]="totalItems" [(page)]="currentPage" [pageSize]="PAGE_SIZE"
+            [boundaryLinks]="true" (pageChange)="changePage()" [maxSize]="8" class="d-flex justify-content-center">
+        </ngb-pagination>
+    </div>
+</div>

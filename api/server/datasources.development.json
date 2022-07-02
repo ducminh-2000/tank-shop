@@ -1,0 +1,20 @@
+{
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "/Users/ducnm-vfast/Documents/SUNNY-TOOL/chat-api/uploads",
+    "maxFileSize": "300485760"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "db_shop",
+    "password": "Duc_010320",
+    "user": "root",
+    "connector": "mysql",
+    "maxOfflineRequests": 250,
+    "charset": "utf8mb4",
+    "collation": "utf8mb4_unicode_ci"
+  }
+}

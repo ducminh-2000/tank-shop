@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45.639" height="46.353" viewBox="0 0 45.639 46.353">
+  <defs>
+    <filter id="ic_radio_button_unchecked_24px" x="9.758" y="0" width="35.881" height="35.881" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_428" x="0" y="13.761" width="32.593" height="32.593" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_705" data-name="Group 705" transform="translate(-1222.361 -191.24)">
+    <g transform="matrix(1, 0, 0, 1, 1222.36, 191.24)" filter="url(#ic_radio_button_unchecked_24px)">
+      <path id="ic_radio_button_unchecked_24px-2" data-name="ic_radio_button_unchecked_24px" d="M10.941,2a8.941,8.941,0,1,0,8.941,8.941A8.944,8.944,0,0,0,10.941,2Zm0,16.093a7.152,7.152,0,1,1,7.152-7.152A7.15,7.15,0,0,1,10.941,18.093Z" transform="translate(16.76 4)" fill="#5c5c5c"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1222.36, 191.24)" filter="url(#Path_428)">
+      <path id="Path_428-2" data-name="Path 428" d="M10.35,0,0,10.35" transform="translate(11.12 21.88)" fill="none" stroke="#5c5c5c" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

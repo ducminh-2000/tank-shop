@@ -1,0 +1,22 @@
+.kt-aside__brand {
+  background-color: #fff;
+  height: 10vh;
+  margin: auto;
+  .kt-aside__brand-tools {
+    height: 80px;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+  }
+  .kt-aside__brand-aside-toggler {
+    span {
+      color: #0E1E37;
+      font-size: 2rem;
+    }
+  }
+  .kt-aside__brand-logo {
+    img {
+      height: 10vh;
+    }
+  }
+}

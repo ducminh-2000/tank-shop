@@ -1,0 +1,79 @@
+<div class="main px-2">
+  <div class="modal-header">
+    <h3 class="modal-title" style="text-align: center">
+      <span class="mdi mdi-border-color"></span>&nbsp;
+      {{ (account.id ? "users.editMember" : "users.addMember") | translate }}
+    </h3>
+  </div>
+  <div class="container-fluid">
+    <div class="form-group col-sm-12 gr-mg">
+      <form id="crud-user" #form="ngForm" data-parsley-validate="" novalidate style="margin-top: 30px">
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="name">Tên</label>
+            <input type="text" name="name" id="name" [(ngModel)]="account.name" required placeholder="Tên"
+              class="form-control input-sm" />
+          </div>
+          <div class="form-group col-sm-6" *ngIf="isRoleSuperAdmin">
+            <mat-form-field style="width:100%" (click)="overlayZindex()" appearance="fill">
+              <mat-label>Chức vụ</mat-label>
+              <mat-select [formControl]="roleForm" placeholder="Chức vụ" required name="kind" [(ngModel)]="account.kind">
+                <mat-option [value]="'USER'">
+                  {{ "Nhân viên" }}
+                </mat-option>
+                <mat-option [value]="'ADMIN'">
+                  {{ "Quản lý " }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" [(ngModel)]="account.email" required placeholder="Email"
+              class="form-control input-sm" />
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="password">Mật khẩu</label>
+            <input type="text" name="password" id="password" [(ngModel)]="account.password" required
+              placeholder="Mật khẩu" class="form-control input-sm" />
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label for="city">Địa chỉ</label>
+            <input type="text" name="address" id="address" [(ngModel)]="account.address"
+              placeholder="Địa chỉ" class="form-control input-sm" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-6 gr-mg">
+            <form id="img-upload-form" class="uploader">
+              <input id="img-upload" type="file" name="fileUpload" accept="image/*" style="display: none"
+                (change)="onFileChanged($event.target.files[0], 'images')" />
+              <label for="img-upload" id="img-drag">
+                <img id="img-image" [appImage]="account?.avatar" containerId="images" class="avatar" />
+                <div id="startImg">
+                  <div id="notimageImg" class="hidden">
+                    Please select an image
+                  </div>
+                  <span id="img-upload-btn" class="btn btn-custom-normal">{{
+                    "users.uploadImage" | translate
+                    }}</span>
+                </div>
+              </label>
+            </form>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-success md-close" (click)="cancel()">
+      {{ "Thoát" | translate }}
+    </button>
+    <button type="button" class="btn btn-custom-normal md-close" (click)="upsertAccount()">
+      {{ "appCore.buttons.validate" | translate }}
+    </button>
+  </div>
+</div>

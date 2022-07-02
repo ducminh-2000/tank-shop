@@ -1,0 +1,2624 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: API
+  description: STORE-API
+basePath: /api
+paths:
+  '/Accounts/{id}/roles/{fk}':
+    get:
+      tags:
+        - Account
+      summary: Find a related item by id for roles.
+      operationId: Account.prototype.__findById__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for roles
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Role'
+      deprecated: false
+    delete:
+      tags:
+        - Account
+      summary: Delete a related item by id for roles.
+      operationId: Account.prototype.__destroyById__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for roles
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - Account
+      summary: Update a related item by id for roles.
+      operationId: Account.prototype.__updateById__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for roles
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Role'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Role'
+      deprecated: false
+  '/Accounts/{id}/roles/rel/{fk}':
+    put:
+      tags:
+        - Account
+      summary: Add a related item by id for roles.
+      operationId: Account.prototype.__link__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for roles
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/RoleMapping'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/RoleMapping'
+      deprecated: false
+    delete:
+      tags:
+        - Account
+      summary: Remove the roles relation to an item by id.
+      operationId: Account.prototype.__unlink__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for roles
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    head:
+      tags:
+        - Account
+      summary: Check the existence of roles relation to an item by id.
+      operationId: Account.prototype.__exists__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for roles
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: boolean
+      deprecated: false
+  '/Accounts/{id}/accessTokens/{fk}':
+    get:
+      tags:
+        - Account
+      summary: Find a related item by id for accessTokens.
+      operationId: Account.prototype.__findById__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+    delete:
+      tags:
+        - Account
+      summary: Delete a related item by id for accessTokens.
+      operationId: Account.prototype.__destroyById__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - Account
+      summary: Update a related item by id for accessTokens.
+      operationId: Account.prototype.__updateById__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+  '/Accounts/{id}/roles':
+    get:
+      tags:
+        - Account
+      summary: Queries roles of Account.
+      operationId: Account.prototype.__get__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Role'
+      deprecated: false
+    post:
+      tags:
+        - Account
+      summary: Creates a new instance in roles of this model.
+      operationId: Account.prototype.__create__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Role'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Role'
+      deprecated: false
+    delete:
+      tags:
+        - Account
+      summary: Deletes all roles of this model.
+      operationId: Account.prototype.__delete__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Accounts/{id}/roles/count':
+    get:
+      tags:
+        - Account
+      summary: Counts roles of Account.
+      operationId: Account.prototype.__count__roles
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/Accounts/{id}/accessTokens':
+    get:
+      tags:
+        - Account
+      summary: Queries accessTokens of Account.
+      operationId: Account.prototype.__get__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/AccountToken'
+      deprecated: false
+    post:
+      tags:
+        - Account
+      summary: Creates a new instance in accessTokens of this model.
+      operationId: Account.prototype.__create__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+    delete:
+      tags:
+        - Account
+      summary: Deletes all accessTokens of this model.
+      operationId: Account.prototype.__delete__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Accounts/{id}/accessTokens/count':
+    get:
+      tags:
+        - Account
+      summary: Counts accessTokens of Account.
+      operationId: Account.prototype.__count__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Accounts:
+    post:
+      tags:
+        - Account
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Account.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+    patch:
+      tags:
+        - Account
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: Account.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+    put:
+      tags:
+        - Account
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Account.replaceOrCreate__put_Accounts
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+    get:
+      tags:
+        - Account
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Account.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Account'
+      deprecated: false
+  /Accounts/replaceOrCreate:
+    post:
+      tags:
+        - Account
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Account.replaceOrCreate__post_Accounts_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+  /Accounts/upsertWithWhere:
+    post:
+      tags:
+        - Account
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: Account.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+  '/Accounts/{id}/exists':
+    get:
+      tags:
+        - Account
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Account.exists__get_Accounts_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Accounts/{id}':
+    head:
+      tags:
+        - Account
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Account.exists__head_Accounts_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Account
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Account.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+    put:
+      tags:
+        - Account
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Account.replaceById__put_Accounts_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+    delete:
+      tags:
+        - Account
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Account.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - Account
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Account.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+  '/Accounts/{id}/replace':
+    post:
+      tags:
+        - Account
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Account.replaceById__post_Accounts_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+  /Accounts/findOne:
+    get:
+      tags:
+        - Account
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Account.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+  /Accounts/update:
+    post:
+      tags:
+        - Account
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Account.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Accounts/count:
+    get:
+      tags:
+        - Account
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Account.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Accounts/change-stream:
+    post:
+      tags:
+        - Account
+      summary: Create a change stream.
+      operationId: Account.createChangeStream__post_Accounts_change-stream
+      parameters:
+        - name: options
+          in: formData
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: file
+      deprecated: false
+    get:
+      tags:
+        - Account
+      summary: Create a change stream.
+      operationId: Account.createChangeStream__get_Accounts_change-stream
+      parameters:
+        - name: options
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: file
+      deprecated: false
+  /Accounts/login:
+    post:
+      tags:
+        - Account
+      summary: Login a user with username/email and password.
+      operationId: Account.login
+      parameters:
+        - name: credentials
+          in: body
+          required: true
+          schema:
+            type: object
+        - name: include
+          in: query
+          description: >-
+            Related objects to include in the response. See the description of
+            return value for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: >+
+              The response body contains properties of the AccessToken created
+              on login.
+
+              Depending on the value of `include` parameter, the body may
+              contain additional properties:
+
+                - `user` - `U+007BUserU+007D` - Data of the currently logged in user. (`include=user`)
+
+            type: object
+      deprecated: false
+  /Accounts/logout:
+    post:
+      tags:
+        - Account
+      summary: Logout a user with access token.
+      operationId: Account.logout
+      parameters: []
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Accounts/{id}/verify':
+    post:
+      tags:
+        - Account
+      summary: Trigger user's identity verification with configured verifyOptions
+      operationId: Account.prototype.verify
+      parameters:
+        - name: id
+          in: path
+          description: Account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Accounts/confirm:
+    get:
+      tags:
+        - Account
+      summary: Confirm a user registration with identity verification token.
+      operationId: Account.confirm
+      parameters:
+        - name: uid
+          in: query
+          required: true
+          type: string
+        - name: token
+          in: query
+          required: true
+          type: string
+        - name: redirect
+          in: query
+          required: false
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Accounts/reset:
+    post:
+      tags:
+        - Account
+      summary: Reset password for a user with email.
+      operationId: Account.resetPassword
+      parameters:
+        - name: options
+          in: body
+          required: true
+          schema:
+            type: object
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Accounts/change-password:
+    post:
+      tags:
+        - Account
+      summary: Change a user's password.
+      operationId: Account.changePassword
+      parameters:
+        - name: oldPassword
+          in: formData
+          required: true
+          type: string
+        - name: newPassword
+          in: formData
+          required: true
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Accounts/reset-password:
+    post:
+      tags:
+        - Account
+      summary: Reset user's password via a password-reset token.
+      operationId: Account.setPassword
+      parameters:
+        - name: newPassword
+          in: formData
+          required: true
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/AccountTokens/{id}/user':
+    get:
+      tags:
+        - AccountToken
+      summary: Fetches belongsTo relation user.
+      operationId: AccountToken.prototype.__get__user
+      parameters:
+        - name: id
+          in: path
+          description: AccountToken id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Account'
+      deprecated: false
+  /AccountTokens:
+    post:
+      tags:
+        - AccountToken
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: AccountToken.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+    patch:
+      tags:
+        - AccountToken
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: AccountToken.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+    put:
+      tags:
+        - AccountToken
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: AccountToken.replaceOrCreate__put_AccountTokens
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+    get:
+      tags:
+        - AccountToken
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: AccountToken.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/AccountToken'
+      deprecated: false
+  /AccountTokens/replaceOrCreate:
+    post:
+      tags:
+        - AccountToken
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: AccountToken.replaceOrCreate__post_AccountTokens_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+  /AccountTokens/upsertWithWhere:
+    post:
+      tags:
+        - AccountToken
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: AccountToken.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+  '/AccountTokens/{id}/exists':
+    get:
+      tags:
+        - AccountToken
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'AccountToken.exists__get_AccountTokens_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/AccountTokens/{id}':
+    head:
+      tags:
+        - AccountToken
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'AccountToken.exists__head_AccountTokens_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - AccountToken
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: AccountToken.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+    put:
+      tags:
+        - AccountToken
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'AccountToken.replaceById__put_AccountTokens_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+    delete:
+      tags:
+        - AccountToken
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: AccountToken.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - AccountToken
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: AccountToken.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: AccountToken id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+  '/AccountTokens/{id}/replace':
+    post:
+      tags:
+        - AccountToken
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'AccountToken.replaceById__post_AccountTokens_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+  /AccountTokens/findOne:
+    get:
+      tags:
+        - AccountToken
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: AccountToken.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccountToken'
+      deprecated: false
+  /AccountTokens/update:
+    post:
+      tags:
+        - AccountToken
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: AccountToken.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/AccountToken'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /AccountTokens/count:
+    get:
+      tags:
+        - AccountToken
+      summary: Count instances of the model matched by where from the data source.
+      operationId: AccountToken.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /AccountTokens/change-stream:
+    post:
+      tags:
+        - AccountToken
+      summary: Create a change stream.
+      operationId: AccountToken.createChangeStream__post_AccountTokens_change-stream
+      parameters:
+        - name: options
+          in: formData
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: file
+      deprecated: false
+    get:
+      tags:
+        - AccountToken
+      summary: Create a change stream.
+      operationId: AccountToken.createChangeStream__get_AccountTokens_change-stream
+      parameters:
+        - name: options
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: file
+      deprecated: false
+  '/Tanks/{id}/flowOuts/{fk}':
+    get:
+      tags:
+        - Tank
+      summary: Find a related item by id for flowOuts.
+      operationId: Tank.prototype.__findById__flowOuts
+      parameters:
+        - name: id
+          in: path
+          description: Tank id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for flowOuts
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+    delete:
+      tags:
+        - Tank
+      summary: Delete a related item by id for flowOuts.
+      operationId: Tank.prototype.__destroyById__flowOuts
+      parameters:
+        - name: id
+          in: path
+          description: Tank id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for flowOuts
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - Tank
+      summary: Update a related item by id for flowOuts.
+      operationId: Tank.prototype.__updateById__flowOuts
+      parameters:
+        - name: id
+          in: path
+          description: Tank id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Foreign key for flowOuts
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+  '/Tanks/{id}/flowOuts':
+    get:
+      tags:
+        - Tank
+      summary: Queries flowOuts of Tank.
+      operationId: Tank.prototype.__get__flowOuts
+      parameters:
+        - name: id
+          in: path
+          description: Tank id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/FlowOut'
+      deprecated: false
+    post:
+      tags:
+        - Tank
+      summary: Creates a new instance in flowOuts of this model.
+      operationId: Tank.prototype.__create__flowOuts
+      parameters:
+        - name: id
+          in: path
+          description: Tank id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+    delete:
+      tags:
+        - Tank
+      summary: Deletes all flowOuts of this model.
+      operationId: Tank.prototype.__delete__flowOuts
+      parameters:
+        - name: id
+          in: path
+          description: Tank id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Tanks/{id}/flowOuts/count':
+    get:
+      tags:
+        - Tank
+      summary: Counts flowOuts of Tank.
+      operationId: Tank.prototype.__count__flowOuts
+      parameters:
+        - name: id
+          in: path
+          description: Tank id
+          required: true
+          type: string
+          format: JSON
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Tanks:
+    post:
+      tags:
+        - Tank
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Tank.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Tank'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+    patch:
+      tags:
+        - Tank
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: Tank.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Tank'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+    put:
+      tags:
+        - Tank
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Tank.replaceOrCreate__put_Tanks
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Tank'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+    get:
+      tags:
+        - Tank
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Tank.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Tank'
+      deprecated: false
+  /Tanks/replaceOrCreate:
+    post:
+      tags:
+        - Tank
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Tank.replaceOrCreate__post_Tanks_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Tank'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+  /Tanks/upsertWithWhere:
+    post:
+      tags:
+        - Tank
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: Tank.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Tank'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+  '/Tanks/{id}/exists':
+    get:
+      tags:
+        - Tank
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Tank.exists__get_Tanks_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Tanks/{id}':
+    head:
+      tags:
+        - Tank
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Tank.exists__head_Tanks_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Tank
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Tank.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+    put:
+      tags:
+        - Tank
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Tank.replaceById__put_Tanks_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Tank'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+    delete:
+      tags:
+        - Tank
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Tank.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - Tank
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Tank.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: Tank id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Tank'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+  '/Tanks/{id}/replace':
+    post:
+      tags:
+        - Tank
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Tank.replaceById__post_Tanks_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Tank'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+  /Tanks/findOne:
+    get:
+      tags:
+        - Tank
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Tank.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+  /Tanks/update:
+    post:
+      tags:
+        - Tank
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Tank.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Tank'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Tanks/count:
+    get:
+      tags:
+        - Tank
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Tank.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Tanks/change-stream:
+    post:
+      tags:
+        - Tank
+      summary: Create a change stream.
+      operationId: Tank.createChangeStream__post_Tanks_change-stream
+      parameters:
+        - name: options
+          in: formData
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: file
+      deprecated: false
+    get:
+      tags:
+        - Tank
+      summary: Create a change stream.
+      operationId: Tank.createChangeStream__get_Tanks_change-stream
+      parameters:
+        - name: options
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: file
+      deprecated: false
+  '/FlowOuts/{id}/tank':
+    get:
+      tags:
+        - FlowOut
+      summary: Fetches belongsTo relation tank.
+      operationId: FlowOut.prototype.__get__tank
+      parameters:
+        - name: id
+          in: path
+          description: FlowOut id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Tank'
+      deprecated: false
+  /FlowOuts:
+    post:
+      tags:
+        - FlowOut
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: FlowOut.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+    patch:
+      tags:
+        - FlowOut
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: FlowOut.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+    put:
+      tags:
+        - FlowOut
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: FlowOut.replaceOrCreate__put_FlowOuts
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+    get:
+      tags:
+        - FlowOut
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: FlowOut.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/FlowOut'
+      deprecated: false
+  /FlowOuts/replaceOrCreate:
+    post:
+      tags:
+        - FlowOut
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: FlowOut.replaceOrCreate__post_FlowOuts_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+  /FlowOuts/upsertWithWhere:
+    post:
+      tags:
+        - FlowOut
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: FlowOut.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+  '/FlowOuts/{id}/exists':
+    get:
+      tags:
+        - FlowOut
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'FlowOut.exists__get_FlowOuts_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/FlowOuts/{id}':
+    head:
+      tags:
+        - FlowOut
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'FlowOut.exists__head_FlowOuts_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - FlowOut
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: FlowOut.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+    put:
+      tags:
+        - FlowOut
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'FlowOut.replaceById__put_FlowOuts_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+    delete:
+      tags:
+        - FlowOut
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: FlowOut.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - FlowOut
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: FlowOut.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: FlowOut id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+  '/FlowOuts/{id}/replace':
+    post:
+      tags:
+        - FlowOut
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'FlowOut.replaceById__post_FlowOuts_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+  /FlowOuts/findOne:
+    get:
+      tags:
+        - FlowOut
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: FlowOut.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/FlowOut'
+      deprecated: false
+  /FlowOuts/update:
+    post:
+      tags:
+        - FlowOut
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: FlowOut.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/FlowOut'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /FlowOuts/count:
+    get:
+      tags:
+        - FlowOut
+      summary: Count instances of the model matched by where from the data source.
+      operationId: FlowOut.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /FlowOuts/change-stream:
+    post:
+      tags:
+        - FlowOut
+      summary: Create a change stream.
+      operationId: FlowOut.createChangeStream__post_FlowOuts_change-stream
+      parameters:
+        - name: options
+          in: formData
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: file
+      deprecated: false
+    get:
+      tags:
+        - FlowOut
+      summary: Create a change stream.
+      operationId: FlowOut.createChangeStream__get_FlowOuts_change-stream
+      parameters:
+        - name: options
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: file
+      deprecated: false
+tags:
+  - name: Account
+  - name: AccountToken
+  - name: Tank
+  - name: FlowOut
+consumes:
+  - application/json
+  - application/x-www-form-urlencoded
+  - application/xml
+  - text/xml
+produces:
+  - application/json
+  - application/xml
+  - text/xml
+  - application/javascript
+  - text/javascript
+definitions:
+  x-any:
+    properties: {}
+  Role:
+    properties:
+      id:
+        type: number
+        format: double
+      name:
+        type: string
+      description:
+        type: string
+      created:
+        type: string
+        format: date-time
+      modified:
+        type: string
+        format: date-time
+    required:
+      - name
+    additionalProperties: false
+  RoleMapping:
+    description: Map principals to roles
+    properties:
+      id:
+        type: number
+        format: double
+      principalType:
+        description: >-
+          The principal type, such as USER, APPLICATION, ROLE, or user model
+          name in case of multiple user models
+        type: string
+      principalId:
+        type: string
+      roleId:
+        type: number
+        format: double
+    additionalProperties: false
+  AccountToken:
+    properties:
+      id:
+        type: string
+      ttl:
+        default: 1209600
+        description: time to live in seconds (2 weeks by default)
+        type: number
+        format: double
+      scopes:
+        description: Array of scopes granted to this access token.
+        type: array
+        items:
+          type: string
+      created:
+        type: string
+        format: date-time
+      userId:
+        type: number
+        format: double
+      createdAt:
+        type: string
+        format: date-time
+      updatedAt:
+        type: string
+        format: date-time
+    required:
+      - id
+    additionalProperties: false
+  Account:
+    properties:
+      name:
+        type: string
+      dateOfBirth:
+        type: string
+        format: date-time
+      kind:
+        type: string
+      sex:
+        type: boolean
+      avatar:
+        type: string
+      address:
+        type: string
+      country:
+        type: string
+      realm:
+        type: string
+      username:
+        type: string
+      email:
+        type: string
+      emailVerified:
+        type: boolean
+      id:
+        type: number
+        format: double
+      createdAt:
+        type: string
+        format: date-time
+      updatedAt:
+        type: string
+        format: date-time
+    required:
+      - email
+    additionalProperties: false
+  FlowOut:
+    properties:
+      flowOut:
+        type: number
+        format: double
+      id:
+        type: number
+        format: double
+      tankId:
+        type: number
+        format: double
+      createdAt:
+        type: string
+        format: date-time
+      updatedAt:
+        type: string
+        format: date-time
+    additionalProperties: false
+  Tank:
+    properties:
+      name:
+        default: status
+        type: string
+      status:
+        type: string
+      tempt:
+        type: number
+        format: double
+      flow:
+        type: number
+        format: double
+      fuel:
+        type: string
+      m3:
+        type: string
+      id:
+        type: number
+        format: double
+      createdAt:
+        type: string
+        format: date-time
+      updatedAt:
+        type: string
+        format: date-time
+    additionalProperties: false

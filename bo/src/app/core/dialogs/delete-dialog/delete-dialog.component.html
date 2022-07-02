@@ -1,0 +1,22 @@
+<div class="modal-confirm">
+  <div class="modal-header">
+  </div>
+  <div class="modal-body">
+    <div class="text-center">
+      <div class="icon-box">
+        <i class="fa fa-exclamation"></i>
+      </div>
+      <h3>{{ title }}</h3>
+      <p>{{ content }}</p>
+      <div class="xs-mt-50">
+        <button (click)="cancel()" type="button"
+        class="btn btn-space btn-outline-success">{{ 'appCore.components.deleteDialog.buttons.cancel' | translate }}</button>
+        <button (click)="delete()" type="button"
+        
+                class="btn btn-space btn-danger">{{ 'appCore.components.deleteDialog.buttons.delete' | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer"></div>
+</div>

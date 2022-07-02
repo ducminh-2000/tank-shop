@@ -1,0 +1,21 @@
+{
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./uploads",
+    "maxFileSize": "300485760"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "db_shop",
+    "password": "Duc_010320",
+    "name": "mysql",
+    "user": "root",
+    "connector": "mysql",
+    "maxOfflineRequests": 250,
+    "charset": "utf8mb4",
+    "collation": "utf8mb4_unicode_ci"
+  }
+}

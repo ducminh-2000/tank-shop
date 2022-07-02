@@ -1,0 +1,54 @@
+<div class="main px-2">
+    <div class="modal-header">
+        <h3 class="modal-title" style="text-align: center">
+            <span class="mdi mdi-border-color"></span>&nbsp;
+            {{ (data.id ? "Sửa nội dung" : "Thêm mới") | translate }}        </h3>
+    </div>
+    <div class="container-fluid">
+        <div class="form-group col-sm-12 gr-mg">
+            <form id="crud-user" #form="ngForm" data-parsley-validate="" novalidate style="margin-top: 30px">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Tên bình</label>
+                        <input type="text" name="name" id="name" [(ngModel)]="data.name" required
+                            placeholder="name" class="form-control input-sm"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="temp">Temp</label>
+                        <input type="number" min=0 name="temp" id="temp" [(ngModel)]="data.tempt" required
+                            placeholder="temp" class="form-control input-sm"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="flow">Flow</label>
+                        <input type="number" min=0 name="flow" id="flow" [(ngModel)]="data.flow" required
+                            placeholder="flow" class="form-control input-sm"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="fuel">Mức nhiên liệu</label>
+                        <input type="text" name="fuel" id="fuel" [(ngModel)]="data.fuel" required
+                            placeholder="fuel" class="form-control input-sm"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="m3">Dung tích</label>
+                        <input type="text" name="m3" id="m3" [(ngModel)]="data.m3" required
+                            placeholder="m3" class="form-control input-sm"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <input type="text" name="status" id="status" [(ngModel)]="data.status" required
+                            placeholder="status" class="form-control input-sm"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success md-close" (click)="cancel()">
+            {{ "Thoát" | translate }}
+        </button>
+        <button type="button" class="btn btn-custom-normal md-close" (click)="upsertData(form)">
+            {{ "appCore.buttons.validate" | translate }}
+        </button>
+    </div>
+</div>

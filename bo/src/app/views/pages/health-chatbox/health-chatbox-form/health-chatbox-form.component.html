@@ -1,0 +1,45 @@
+<div class="main px-2">
+    <div class="modal-header">
+        <h3 class="modal-title" style="text-align: center">
+            <span class="mdi mdi-border-color"></span>&nbsp;
+            {{ (data.id ? "Sửa thông tin" : "Thêm mới thông tin") | translate }}
+        </h3>
+    </div>
+    <div class="container-fluid">
+        <div class="form-group col-sm-12 gr-mg">
+            <form id="crud-user" #form="ngForm" data-parsley-validate="" novalidate style="margin-top: 30px">
+                <div class="row">
+                    <mat-form-field class="col-6" (click)="overlayZindex()" appearance="fill">
+                        <mat-label>Chọn bình xăng</mat-label>
+            
+                        <mat-select ngDefaultControl [formControl]="tankForm" placeholder="tank" #multiSelect name="tank"
+                          [(ngModel)]="data.tank">
+                          <mat-option>
+                            <ngx-mat-select-search [formControl]="tankFormFilterCtrl" ngDefaultControl name="search" placeholderLabel="Tên bình xăng..." 
+                            noEntriesFoundLabel="'Không có bình xăng thỏa mãn yêu cầu'">
+                            </ngx-mat-select-search>
+                          </mat-option>
+                          <mat-option *ngFor="let tank of filteredTankForm | async" [value]="tank">
+                            {{ tank.name }}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    <div class="form-group col-sm-6">
+                        <label for="name">Lượng xăng</label>
+                        <input type="number" name="name" id="name" [(ngModel)]="data.flowOut" required placeholder="Source"
+                            class="form-control input-sm" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success md-close" (click)="cancel()">
+            {{ "Thoát" | translate }}
+        </button>
+        <button type="button" class="btn btn-custom-normal md-close" (click)="upsertData(form)">
+            {{ "appCore.buttons.validate" | translate }}
+        </button>
+    </div>
+</div>

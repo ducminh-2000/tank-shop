@@ -1,0 +1,35 @@
+:host {
+	::ng-deep {
+		ngb-tabset > .nav-tabs {
+			display: none;
+		}
+	}
+}
+.wrap-notify {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 2em;
+	i {
+		color: #acacac;
+	}
+	&:focus {
+		outline: none;
+	}
+	i {
+		position: relative;
+		font-size: 1.8em;
+		cursor: pointer;
+	}
+	.circle {
+		width: 20px;
+		height: 20px;
+		background-color: #f6eddb;
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		border-radius: 50%;
+		font-size: .8em;
+		text-align: center;
+	}
+}

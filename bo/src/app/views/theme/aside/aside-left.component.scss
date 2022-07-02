@@ -1,0 +1,94 @@
+:host {
+  .kt-aside {
+    height: 100%;
+    background-color: #0E1E37;
+
+    .kt-aside-menu {
+      margin: 0;
+    }
+  }
+
+  // fixed text line break issue on minimized aside hover
+  .kt-menu__link-text {
+    white-space: nowrap;
+  }
+
+  .kt-aside-menu {
+    padding-top: 0;
+    background-color: #0E1E37;
+    height: 85vh;
+    overflow-y: auto !important;
+
+    .kt-menu__item {
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        .kt-menu__link {
+          background-color: rgba(255, 255, 255, .3) !important;
+        }
+
+        .kt-menu__link-text {
+          font-weight: 600;
+        }
+
+        .kt-menu__link-icon {
+          font-size: 1.6em;
+          color: #cbcbcb !important;
+        }
+      }
+    }
+
+    //  custom item in menu left
+    .kt-menu__nav {
+      padding: 0;
+
+      .kt-menu__link {
+        .kt-menu__link-text {
+          color: #cbcbcb;
+        }
+
+        .kt-menu__link-icon {
+          color: #cbcbcb;
+          font-size: 1.6rem;
+        }
+      }
+
+      .kt-menu__ver-arrow {
+        font-size: 2em;
+        color: #acacac;
+      }
+
+      .kt-menu__item--open, .kt-menu__item--active {
+        .kt-menu__link {
+          background-color: rgba(255, 255, 255, .3) !important;
+        }
+
+        .kt-menu__link-text {
+          font-weight: 600;
+        }
+
+        .kt-menu__link-icon {
+          font-size: 1.6em;
+        }
+
+        .kt-menu__link-bullet .kt-menu__link-bullet--dot {
+          color: #acacac;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  //@media (max-height: 768px) {
+  //  .kt-aside-menu {
+  //    height: 500px;
+  //  }
+  //}
+  //@media (max-height: 1080px) {
+  //  .kt-aside-menu {
+  //    height: 700px;
+  //  }
+  //}
+}

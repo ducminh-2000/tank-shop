@@ -1,0 +1,1702 @@
+***************
+*** 739,745 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 739,745 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 1145,1151 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 1145,1151 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 1391,1397 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 1391,1397 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 1589,1595 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 1589,1595 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 1835,1841 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 1835,1841 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 2617,2623 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 2617,2623 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 2863,2869 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 2863,2869 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 3038,3044 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 3038,3044 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 3284,3290 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 3284,3290 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 4259,4265 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 4259,4265 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 4505,4511 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 4505,4511 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 5751,5757 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 5751,5757 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 5997,6003 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 5997,6003 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 6365,6371 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 6365,6371 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 6611,6617 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 6611,6617 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 6809,6815 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 6809,6815 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 7055,7061 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 7055,7061 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 7400,7406 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 7400,7406 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 7646,7652 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 7646,7652 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 7867,7873 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 7867,7873 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 8113,8119 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 8113,8119 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 8334,8340 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 8334,8340 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 8580,8586 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 8580,8586 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 9204,9210 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 9204,9210 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 9450,9456 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 9450,9456 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 9671,9677 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 9671,9677 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 9918,9924 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 9918,9924 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 10927,10933 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 10927,10933 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 11173,11179 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 11173,11179 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 11541,11547 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 11541,11547 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 11787,11793 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 11787,11793 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 12302,12308 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 12302,12308 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 12548,12554 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 12548,12554 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 15044,15050 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 15044,15050 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 15290,15296 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 15290,15296 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 15488,15494 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 15488,15494 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 15734,15740 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 15734,15740 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 16047,16053 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 16047,16053 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 16293,16299 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 16293,16299 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 17194,17200 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 17194,17200 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 17440,17446 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 17440,17446 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 17661,17667 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 17661,17667 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 17907,17913 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 17907,17913 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 18149,18155 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 18149,18155 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 18395,18401 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 18395,18401 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 18616,18622 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 18616,18622 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 18862,18868 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 18862,18868 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 19083,19089 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 19083,19089 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 19329,19335 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 19329,19335 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 19844,19850 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 19844,19850 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 20090,20096 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 20090,20096 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 20311,20317 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 20311,20317 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 20557,20563 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 20557,20563 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 20755,20761 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 20755,20761 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 21001,21007 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 21001,21007 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 21461,21467 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 21461,21467 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 21707,21713 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 21707,21713 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 21928,21934 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 21928,21934 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 22174,22180 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 22174,22180 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 22395,22401 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 22395,22401 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 22641,22647 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 22641,22647 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 22862,22868 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 22862,22868 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 23108,23114 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 23108,23114 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 23306,23312 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 23306,23312 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 23552,23558 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 23552,23558 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 23773,23779 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 23773,23779 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 24019,24025 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 24019,24025 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 24240,24246 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 24240,24246 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 24486,24492 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 24486,24492 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 24661,24667 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 24661,24667 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 24908,24914 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 24908,24914 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 25131,25137 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 25131,25137 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 25377,25383 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 25377,25383 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 25575,25581 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 25575,25581 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 25821,25827 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 25821,25827 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 25996,26002 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 25996,26002 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 26242,26248 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 26242,26248 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 26486,26492 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 26486,26492 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 26732,26738 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 26732,26738 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 27268,27274 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 27268,27274 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 27514,27520 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 27514,27520 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 27758,27764 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 27758,27764 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 28005,28011 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 28005,28011 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 28182,28188 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 28182,28188 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 28428,28434 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 28428,28434 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 28649,28655 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 28649,28655 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 28895,28901 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 28895,28901 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 29093,29099 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 29093,29099 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 29339,29345 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 29339,29345 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 30294,30300 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 30294,30300 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 30540,30546 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 30540,30546 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 31324,31330 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 31324,31330 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 31570,31576 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 31570,31576 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 31791,31797 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 31791,31797 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 32037,32043 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 32037,32043 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 32258,32264 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 32258,32264 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 32504,32510 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 32504,32510 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 32849,32855 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 32849,32855 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 33095,33101 ****
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
+-             must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+--- 33095,33101 ----
+            in: query
+            description: >-
+              Filter defining fields, where, include, order, offset, and limit -
++             must be a JSON-encoded string (`{"where":{"something":"value"}}`).
+              See
+              https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+              for more details.
+***************
+*** 34449,34454 ****
+      additionalProperties: false
+    ChannelPll:
+      properties:
+        email:
+          type: string
+        password:
+--- 34449,34458 ----
+      additionalProperties: false
+    ChannelPll:
+      properties:
++       taskSubChannels:
++         type: array
++         items:
++           $ref: '#/definitions/TaskSubChannel'
+        email:
+          type: string
+        password:

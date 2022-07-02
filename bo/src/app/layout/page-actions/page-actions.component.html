@@ -1,0 +1,40 @@
+<div class="tools">
+    <div class="kt-portlet__head-wrapper">
+        <button (click)="update()" *ngIf="isUpdateVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa-solid fa-file-arrow-down"></i> Cập nhật
+        </button>
+        <button (click)="clear()" *ngIf="isCheckVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa-solid fa-file-arrow-down"></i> Xóa lựa chọn
+        </button>
+        <button (click)="importStore()" *ngIf="isImportStoreVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa-solid fa-file-arrow-down"></i> Nhập kho
+        </button>
+        <button (click)="exportStore()" *ngIf="isExportStoreVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa-solid fa-file-arrow-down"></i> Xuất kho
+        </button>
+        <button (click)="updateUser()" *ngIf="isUpdateUserVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa-solid fa-file-arrow-down"></i> Cập nhật KH
+        </button>
+        <button (click)="updateStatus()" *ngIf="isUpdateStatusVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa-solid fa-file-arrow-down"></i> Cập nhật trạng thái
+        </button>
+        <button (click)="updatePickDate()" *ngIf="isUpdatePickDateVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa-solid fa-file-arrow-down"></i> Cập nhật ngày pick
+        </button>
+        <button (click)="import()" *ngIf="isImportVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa-solid fa-file-arrow-down"></i> Nhập file
+        </button>
+        <button (click)="export()" *ngIf="isExportVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa-solid fa-file-arrow-down"></i> Xuất file
+        </button>
+        <button (click)="add()" *ngIf="isAddVisible" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa fa-plus"></i> {{ 'appCore.components.pageActions.buttons.add' | translate }}
+        </button>
+        <button  (click)="delete()" *ngIf="isDeleteVisible" type="button" class="btn btn-brand btn-danger p-2 ">
+            <i class="fa fa-trash"></i> {{ 'appCore.components.pageActions.buttons.delete' | translate }}
+        </button>
+        <button (click)="view()" *ngIf="isView" type="button" class="btn btn-brand btn-success btn-custom-normal p-2 ">
+            <i class="fa fa-eye"></i> {{ 'Đã xem' | translate }}
+        </button>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+{
+  "name": "Tank",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": "status"
+    },
+    "status": {
+      "type": "string"
+    },
+    "tempt": {
+      "type": "number"
+    },
+    "flow": {
+      "type": "number"
+    },
+    "fuel":{
+      "type": "string"
+    },
+    "m3":{
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "flowOuts": {
+      "type": "hasMany",
+      "model": "FlowOut",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

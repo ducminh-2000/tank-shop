@@ -1,0 +1,8 @@
+<div class="wrap-loading" *ngIf="isShowLoading">
+  <div class="kt-spinner kt-spinner--lg kt-spinner--center kt-spinner--brand"></div>
+</div>
+<div class="no-content" *ngIf="data && data.length <= 0 && !isShowLoading">
+  <div class="item-content col-12">
+    <h3>Không có nội dung</h3>
+  </div>
+</div>
